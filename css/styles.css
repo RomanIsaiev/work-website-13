@@ -1236,13 +1236,13 @@ p {
 .siema-button-control .prev {
   position: absolute;
   top: 470px;
-  left: 120px;
+  left: 100px;
 }
 
 .siema-button-control .next {
   position: absolute;
   top: 470px;
-  right: 120px;
+  right: 100px;
 }
 
 .siema-button-control button {
