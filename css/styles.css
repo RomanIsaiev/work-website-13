@@ -315,7 +315,7 @@ p {
 }
 
 .sect-one-title {
-  color: #fff;
+  color: #b7d3c1;
   text-align: center;
   font-family: Futura PT;
   font-size: 28px;
@@ -446,7 +446,7 @@ p {
   line-height: normal;
   text-transform: uppercase;
 
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .author-image {
@@ -622,7 +622,7 @@ p {
 .section-three .second-wrapper-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .section-three .second-wrapper-list .list-item p {
@@ -1069,6 +1069,10 @@ p {
   background: linear-gradient(180deg, #165847 0%, #107d61 100%);
 }
 
+.section-five .container {
+  position: relative;
+}
+
 .sect-five-title {
   color: #fff;
   text-align: center;
@@ -1196,14 +1200,14 @@ p {
 
 .siema-button-control .prev {
   position: absolute;
-  top: 540px;
-  left: 35%;
+  top: 470px;
+  left: 120px;
 }
 
 .siema-button-control .next {
   position: absolute;
-  top: 540px;
-  right: 35%;
+  top: 470px;
+  right: 120px;
 }
 
 .siema-button-control button {
