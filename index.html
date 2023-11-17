@@ -9,6 +9,42 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "313913791500543");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=313913791500543&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
     <header class="header">
@@ -37,7 +73,7 @@
             Знайдіть себе у сфері транспортної логістики всього за 7 днів і
             будуйте кар’єру в найбільш стабільній та прогнозованій галузі
           </p>
-          <a class="header-button link" href="#more">Купити</a>
+          <button class="header-button" data-action="open-modal">Купити</button>
           <p class="buy-description">
             оплати зараз та отримай чек-лист 🎁<br />
             <span>"ПАРАД ПОРАД ПОЧАТКІВЦЯМ В ЛОГІСТИЦІ"</span>
@@ -208,7 +244,7 @@
               і дохідній професії</span
             >
           </p>
-          <a class="three-buy-button link" href="">Купити</a>
+          <button class="three-buy-button" data-action="open-modal">Купити</button>
         </div>
         <div class="sect-three-price-container"><p>577,00 грн</p></div>
       </section>
@@ -327,7 +363,7 @@
             Легко стартуйте у сфері транспортної логістики та збільшуйте свій
             дохід
           </p>
-          <a class="four-buy-button link" href="">Купити</a>
+          <button class="four-buy-button" data-action="open-modal">Купити</button>
         </div>
         <div class="four-price-container"><p>577,00 грн</p></div>
       </section>
@@ -617,7 +653,7 @@
             </p>
             <p class="price-container-check">НЕ ЗВОЛІКАЙТЕ</p>
           </div>
-          <a class="five-buy-button link" href="">Купити</a>
+          <button class="five-buy-button" data-action="open-modal" >Купити</button>
         </div>
         <div class="five-price-container"><p>577,00 грн</p></div>
       </section>
@@ -685,6 +721,22 @@
         </div>
       </div>
     </footer>
+     <div class="backdrop js-backdrop">
+      <div class="modal">
+        <button
+          class="modal-close-button"
+          type="button"
+          data-action="close-modal"
+        >
+          <img
+            src="./images/close-modal-icon.svg"
+            alt=" close"
+            width="30"
+            height="30"
+          />
+        </button>
+        <div id="kwiga-widget-1700044765"></div>
+      </div>
     <script src="./js/jquery-3.7.0.min.js" type="module"></script>
     <script src="./js/faq.js" type="module"></script>
     <script src="./js/siema.min.js"></script>
@@ -710,5 +762,10 @@
         .querySelector(".next")
         .addEventListener("click", () => mySiema.next());
     </script>
+    <script src="./js/js-modal.js" type="module"></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1700044765&uuid=95c3d5a8-009f-4cee-b15c-acb5909fb8d0&producer=https://kwiga.com/"
+    ></script>
   </body>
 </html>
