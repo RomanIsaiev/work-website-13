@@ -329,8 +329,8 @@ p {
 
 .price-today {
   position: absolute;
-  bottom: 161px;
-  left: 0;
+  bottom: 220px;
+  left: 32px;
 
   z-index: 999;
 
