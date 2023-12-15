@@ -49,21 +49,26 @@
   <body>
     <header class="header">
       <div class="container">
-        <picture
-          ><source
-            srcset="
-              ./images/header-logo-mobile-1x.png 1x,
-              ./images/header-logo-mobile-2x.png 2x
-            "
-            media="(min-width: 320px)"
-            width="60"
-            height="60" />
-          <img
-            src="./images/header-logo-mobile-1x.png"
-            alt="logo"
-            width="60"
-            height="60"
-        /></picture>
+        <div class="header-start-container">
+          <picture
+            ><source
+              srcset="
+                ./images/header-logo-mobile-1x.png 1x,
+                ./images/header-logo-mobile-2x.png 2x
+              "
+              media="(min-width: 320px)"
+              width="60"
+              height="60" />
+            <img
+              src="./images/header-logo-mobile-1x.png"
+              alt="logo"
+              width="60"
+              height="60"
+          /></picture>
+          <p>
+            Старт <span id="dateElement"></span> <span id="monthElement"></span>
+          </p>
+        </div>
         <div class="header-container">
           <h1 class="header-title">PRO Логіст. Старт</h1>
           <h2 class="header-pre-title">
@@ -108,6 +113,23 @@
     <main>
       <section class="section-one">
         <div class="container">
+          <p class="timer-text">
+            Встигніть зареєструватись до кінця доби і
+            <span>отримайте бонуси</span>
+          </p>
+          <div id="countdown" class="countdown">
+            <div class="countdown-number">
+              <span class="hours countdown-time"></span>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+            </div>
+          </div>
           <h2 class="sect-one-title">для кого інтенсив</h2>
           <ul class="sect-one-list list">
             <li class="one-list-item">
@@ -204,15 +226,19 @@
       <section class="section-three">
         <div class="container">
           <div class="first-wrapper">
-            <h3 class="first-wrapper-title">що ви <span>отримаєте</span></h3>
+            <h3 class="first-wrapper-title">
+              ДЛЯ <span>ЛЕГКОГО</span> СТАРТУ В ПРОФЕСІЇ
+            </h3>
+            <p>7 відеоуроків</p>
+            <span class="plus">+</span>
             <p>
-              7 відеоуроків <br />
-              Фінальна ZOOM-зустріч
+              Чек-лист <br />
+              «ПАРАД ПОРАД ПОЧАТКІВЦЯМ В ЛОГІСТИЦІ»
             </p>
           </div>
           <div class="decoration-string"></div>
           <div class="second-wrapper">
-            <h3 class="second-wrapper-title">І ВИ</h3>
+            <h3 class="second-wrapper-title">ЩО ВИ ОТРИМАЄТЕ</h3>
             <ul class="second-wrapper-list list">
               <li class="list-item">
                 <p>
@@ -327,19 +353,16 @@
             />
             <ul class="four-study-list list">
               <li class="list-item">
-                <p class="study-text">Доступ до матеріалів – 60 днів</p>
+                <p class="study-text">Отримайте лист-підтвердення на пошту</p>
               </li>
               <li class="list-item">
                 <p class="study-text">
-                  Відеоуроки тривалістю близько 30 хвилин
+                  Доєднайтесь за посиланням до Телеграм-каналу
                 </p>
               </li>
               <li class="list-item">
-                <p class="study-text">Телеграм-канал з уроками</p>
-              </li>
-              <li class="list-item">
                 <p class="study-text">
-                  Телеграм-групу для спілкування з однодумцями та експертом
+                  Всі відеоуроки вже в доступі - переглядайте
                 </p>
               </li>
             </ul>
@@ -350,17 +373,27 @@
             </h3>
             <ul class="wrapper-two-list list">
               <li class="list-item">
-                <p>– лист-підтвердження про оплату</p>
+                <p>
+                  Якщо ви на порозі змін і вирішуєте, який же новий шлях обрати,
+                  то цей Інтенсив для вас!
+                </p>
               </li>
               <li class="list-item">
-                <p>– посилання на телеграм-групу</p>
+                <p>
+                  Перевага Інтенсиву в тому, що ви можете за один день отримати
+                  первинні знання про логістику і професії в ній
+                </p>
+              </li>
+              <li class="list-item">
+                <p>
+                  Незалезно від тієї точки, в якій ви зараз знаходитесь і
+                  незалежно від вашого досвіду, навичок та знань в сфері
+                  транспортної логістики - це ваш перший крок при обранні
+                  професійного навчання та побудові майбутньої успішної кар’єри
+                </p>
               </li>
             </ul>
-            <p class="wrapper-two-description">
-              За три дні до старту інтенсиву ви отримаєте посилання на
-              телеграм-канал, де щодня протягом 7 днів буде додаватися новий
-              урок.
-            </p>
+            <p class="wrapper-two-description"></p>
           </div>
           <p class="easy-start-text">
             Легко стартуйте у сфері транспортної логістики та збільшуйте свій
@@ -653,8 +686,7 @@
             </div>
           </div>
           <div class="price-container">
-            <p class="price-discription">ЦІНА ДІЙСНА ТІЛЬКИ СЬОГОДНІ!!!</p>
-            <p class="price-container-check">НЕ ЗВОЛІКАЙТЕ</p>
+            <p class="price-discription">НЕ ЗВОЛІКАЙТЕ</p>
           </div>
           <button class="five-buy-button" data-action="open-modal">
             Купити
@@ -753,6 +785,8 @@
     </div>
     <script src="./js/jquery-3.7.0.min.js" type="module"></script>
     <script src="./js/faq.js" type="module"></script>
+    <script src="./js/timer.js" type="module"></script>
+    <script src="./js/changeDate.js"></script>
     <script src="./js/siema.min.js"></script>
     <script>
       const mySiema = new Siema({

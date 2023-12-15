@@ -99,6 +99,22 @@ p {
   border-top: 1px solid #c49f84;
 }
 
+.header-start-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-start-container p {
+  color: #107d61;
+  font-family: Futura PT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 38.7px */
+  text-transform: uppercase;
+}
+
 .header-title {
   color: #107d61;
   font-family: Futura PT;
@@ -585,6 +601,15 @@ p {
   backdrop-filter: blur(2px);
 }
 
+.section-three .first-wrapper .plus {
+  display: block;
+
+  font-size: 28px;
+  font-weight: 600;
+
+  text-align: center;
+}
+
 .section-three .first-wrapper::before {
   content: "";
   position: absolute;
@@ -1018,6 +1043,10 @@ p {
 }
 
 .section-four .four-wrapper-two .wrapper-two-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
   margin-bottom: 10px;
 
   max-width: 230px;
@@ -1027,6 +1056,7 @@ p {
 
 .section-four .wrapper-two-list .list-item p {
   color: #fff;
+  text-align: center;
   font-family: Futura PT;
   font-size: 16px;
   font-style: normal;
@@ -1172,7 +1202,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 
-  margin-bottom: 8px;
+  margin-bottom: 70px;
 }
 
 .section-five .price-discription span {
@@ -1553,4 +1583,68 @@ body.show-modal .modal {
   right: 30px;
   background: none;
   border: none;
+}
+
+/* timer */
+
+.countdown {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 32px;
+}
+
+.countdown-time {
+  display: block;
+
+  color: #c49f84;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+
+  width: 70px;
+}
+
+.countdown-doubledot {
+  content: "";
+  display: flex;
+
+  height: 25px;
+  width: 1px;
+  background: #c49f84;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* timer text */
+
+.timer-text {
+  color: #fff;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 18px */
+  text-transform: uppercase;
+
+  max-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 10px;
 }
